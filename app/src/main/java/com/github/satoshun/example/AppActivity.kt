@@ -11,13 +11,6 @@ class AppActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    setContent {
-    }
+    startActivity(createShowkaseBrowserIntent(this))
   }
-}
-
-@Preview
-@Composable
-fun PreviewSample() {
-  Text("test")
 }

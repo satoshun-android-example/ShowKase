@@ -5,7 +5,6 @@ plugins {
   id 'kotlin-android'
   id 'kotlin-kapt'
   id 'androidx.navigation.safeargs.kotlin'
-  id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -79,11 +78,8 @@ dependencies {
   implementation NAVIGATION_FRAGMENT
   implementation NAVIGATION_UI
 
-  implementation DAGGER_RUNTIME
-  kapt DAGGER_COMPILER
-
-  implementation DAGGER_HILT
-  kapt DAGGER_HILT_COMPILER
+  implementation "com.airbnb.android:showkase:1.0.0-alpha07"
+  kapt "com.airbnb.android:showkase-processor:1.0.0-alpha07"
 
   testImplementation JUNIT
 
